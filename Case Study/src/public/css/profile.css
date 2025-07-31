@@ -1,0 +1,50 @@
+/* profile css"*/
+.profile-info {
+    background-color: #faf4e3;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 20px;
+  }
+  
+  .profile-info p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  form#profile-form {
+    margin-top: 20px;
+  }
+  
+  form#profile-form label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  form#profile-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    resize: vertical;
+    margin-bottom: 15px;
+  }
+  
+  form#profile-form button {
+    background-color: #7a4f39;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+  }
+  
+  form#profile-form button:hover {
+    background-color: #4d3022;
+  }

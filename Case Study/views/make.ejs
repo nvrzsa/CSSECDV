@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Create Review</title>
+    <link rel="stylesheet" href="/css/make.css">
+</head>
+<body>
+    <h2>Past Reviews</h2>
+    <ul>
+        <% reviews.forEach(review => { %>
+            <li class = "title">
+                <p>Coffee Shop: <%= review.coffeeShopName %></p>
+                <p>Rating: <%= review.rating %></p>
+                <p>Comment: <%= review.comment %></p>
+                <form action="/reviews/<%= review._id %>/edit" method="POST">
+                    <label for="editRating">Edit Rating:</label>
+                    <input type="number" id="editRating" name="editRating" min="1" max="5" value="<%= review.rating %>" required><br><br>
+                    <label for="editComment">Edit Comment:</label><br>
+                    <textarea id="editComment" name="editComment" rows="4" cols="50" required><%= review.comment %></textarea><br><br>
+                    <button type="submit">Save Changes</button>
+                </form>
+                </form>
+                <form action="/reviews/<%= review._id %>/delete" method="POST">
+                    <button type="submit">Delete Review</button>
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.register-container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #faf4e3;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-container form label {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.register-container form input {
+    max-width: 300px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.register-container form input#username,
+.register-container form input#firstName,
+.register-container form input#lastName,
+.register-container form input#email,
+.register-container form input#password {
+    margin-bottom: 15px;
+}
+
+.register-container form button {
+    background-color: #d29f53;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-container form button:hover {
+    background-color: #a87b3e;
+}
