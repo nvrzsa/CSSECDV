@@ -1,0 +1,7 @@
+[
+  { "id": 1, "email": "student1@dlsu.edu", "password": "password1", "role": "student", "profile": { "picture": "images/default-profile.png", "description": "Student 1" }, "reservations": [] },
+  { "id": 2, "email": "student2@dlsu.edu", "password": "password2", "role": "student", "profile": { "picture": "images/default-profile2.jpeg", "description": "Student 2" }, "reservations": [] },
+  { "id": 3, "email": "technician1@dlsu.edu", "password": "password3", "role": "technician", "profile": { "picture": "images/default-profile.png", "description": "Technician 1" }, "reservations": [] },
+  { "id": 4, "email": "technician2@dlsu.edu", "password": "password4", "role": "technician", "profile": { "picture": "images/default-profile.png", "description": "Technician 2" }, "reservations": [] },
+  { "id": 5, "email": "student3@dlsu.edu", "password": "password5", "role": "student", "profile": { "picture": "images/default-profile2.jpeg", "description": "Student 3" }, "reservations": [] }
+]

@@ -1,0 +1,35 @@
+{{#extends 'main'}}
+
+{{#block 'body'}}
+<main>
+    <section>
+        <h2> Lab Availability for the next 7 days </h2>
+        <label for="lab">Select Lab:</label>
+        <select id="lab-select" name="lab" required></select>
+        <div id="availability"></div>
+    </section>
+
+    <section>
+        <h2>Reserve a Slot</h2>
+        <form id="reservation-form">
+            <label for="lab">Lab:</label>
+            <select id="lab" name="lab" required></select>
+
+            <label for="seat">Seat:</label>
+            <select id="seat" name="seat" required></select>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="anonymous">
+                <input type="checkbox" id="anonymous" name="anonymous"> Reserve anonymously
+            </label>
+            
+            <button type="submit">Reserve</button>
+        </form>
+    </section>
+</main>
+{{/block}}

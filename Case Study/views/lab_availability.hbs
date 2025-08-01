@@ -1,0 +1,20 @@
+{{#extends 'main'}}
+
+{{#block 'body'}}
+<main>
+    <section id="check-avalable-section">
+        <h2>Check Available Slots</h2>
+        <input id="lab-date-select" type="date" min="2024-06-10" max="2024-06-15">
+        <select id="lab-timeslot-select"></select>
+        <button id="check-available-slots-btn">check slots</button>
+        <div id="lab-availability-dv1"></div>
+        <div id="lab-availability-dv2"></div>
+        <div id="lab-availability-dv3"></div>
+    </section>
+    <section>
+        <h2>Select a Lab</h2>
+        <select id="lab-select"></select>
+        <div id="availability"></div>
+    </section>
+</main>
+{{/block}}

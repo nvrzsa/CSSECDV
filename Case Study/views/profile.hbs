@@ -1,0 +1,78 @@
+{{#extends 'main'}}
+
+{{#block 'body'}}
+<main>
+    <section>
+        <img src="/images/default-profile.jpeg" alt="Profile Picture" id="profile-picture">
+        <h2 id="user-name">User Name</h2>
+        <p id="user-description">User description...</p>
+        <button id="edit-profile">Edit Profile</button>
+    </section>
+
+    <section id="edit-profile-section" style="display:none;">
+        <h2>Edit Profile</h2>
+        <form id="edit-profile-form">
+            <label for="new-profile-picture">Profile Picture:</label>
+            <input type="file" id="new-profile-picture" name="new-profile-picture">
+            
+            <label for="new-user-name">User Name:</label>
+            <input type="text" id="new-user-name" name="new-user-name">
+            
+            <label for="new-user-description">User Description:</label>
+            <input type="text" id="new-user-description" name="new-user-description">
+            
+            <button type="submit" id="submit-edit">Save Changes</button>
+            <button type="button" id="cancel-edit">Cancel</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Find Other Users</h2>
+        <div class="dropdown">
+            <button id="dropDown-Button" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2 id="reservations-title">Your Reservations</h2>
+        <ul id="user-reservations"></ul>
+    </section>
+
+    <section id="technician-section">
+        <h2>Make Reservation for Students</h2>
+        <div class="dropdown">
+            <button id="technician-dropDown-Button" class="dropbtn">Make Reservation</button>
+            <div id="mytechnicianDropdown" class="dropdown-content"></div>
+        </div>
+    </section>
+
+    <section id="remove-reservation-section">
+        <h2>Remove Reservation for Students</h2>
+        <div class="dropdown">
+            <button id="remove-reservation-dropDown-Button" class="dropbtn">Remove Reservation</button>
+            <div id="myremovereservationDropdown" class="dropdown-content"></div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Account Management</h3>
+        <button id="delete-account" class="profile-button">Delete My Account</button>
+    </section>
+
+    <div id="user-info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" alt="Profile Picture" id="modal-profile-picture">
+            <section>
+                <h2 id="modal-user-name"></h2>
+            </section>
+            <p id="modal-user-description"></p>
+            <section>
+                <h2>Lab Reservations:</h2>
+            </section>
+            <ul id="modal-user-reservations"></ul>
+        </div>
+    </div>
+</main>
+{{/block}}
